@@ -1,0 +1,342 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*~ Стилизация хедера */
+header{
+    width: 100%; /*~ 1536px */
+    position:fixed;
+    top:0;
+    z-index: 1;
+}
+
+/*~ Первая часть хедера */
+.first_part_header{
+    width: 100%;
+    height:30px;
+    padding: 4px 0 4px 0;
+    display: flex;
+    justify-content: flex-end;
+    background: #006117;
+}
+
+/*~ Блок с информацией почты */
+div.mail{
+    display: flex;
+    align-items: center;
+    width:170px;
+}
+
+/*~ Иконка почты */
+img.mail{
+    width: 15%;
+}
+
+/*~ Ссылка на почту */
+a.mail{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    margin:-3px 0 0 10px;
+    color:#FFFFFF;
+    text-decoration: none;
+}
+
+/*~ Изменения стилей ссылки при наведении */
+a.mail:hover{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    margin:-3px 0 0 10px;
+    color:#e1e1e1;
+    text-decoration: none;
+    transition: .5s linear;
+}
+
+/*~ Иконка линии */
+img.line{
+    height: 63%;
+    width: 0.1%;
+    margin: 5px 0 0 5px;
+}
+
+/*~ Блок с информацией телефона */
+div.phone{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 146px 0 0;
+}
+
+/*~ Блок с иконками */
+div.phone_block{
+    width: 30px;
+}
+
+/*~ Иконка Viber */
+img.phone_v{
+    width: 70%;
+    margin: 0 10px 0 5px;
+}
+
+/*~ Иконка Whatsapp */
+img.phone_w{
+    width: 70%;
+    margin: 0 10px 0 5px;
+}
+
+/*~ Ссылка иконок */
+a.phone{
+    display: block;
+}
+
+/*~ Текст телефона */
+p.phone{
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    margin:-3px 0 0 10px;
+    color:#FFFFFF;
+}
+
+/*~ Вторая часть хедера */
+.second_part_header{
+    display: flex;
+    align-items: center; 
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2);
+}
+
+/*~ Блок с логотипом во второй части хедера */
+div.second_part_header_logo{
+    padding: 2px 0 2px 0; 
+    width: 0%;
+}
+
+/*~ Картинка логотипа */
+.logo_img{
+    width: 100px;
+    margin: auto 0 auto 130px; 
+}
+
+/*~ Текст навигационного меню */
+.text_nav_menu{
+    display: flex;
+    width: 89%; 
+    font-size: 20.25px;
+    line-height: 22px;
+    margin: 0 0 0 9px; 
+} 
+
+/*~ Расположение навигационого меню */
+nav.menu {
+    width: 55%;
+    margin: 0 120px 0 255px;
+}
+
+/*~ Стиизация списка */
+ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+/*~ Стиизация элементов списка, чтобы они были в одну строку*/
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu > li:last-child {
+    margin-right: 0;
+}
+
+/*~ Стилизация ссылки пункта меню*/
+a.item_submenu {
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    color:#454545;
+    transition: .5s linear;
+    margin:0;
+}
+
+/*~ Стилизация ссылки пункта меню при наведении*/
+a.item_submenu:hover{
+    display: block;
+    padding: 0px 20px;
+    text-decoration: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 20px;
+    color:#006117;
+    transition: .5s linear;
+    margin:0;
+}
+
+/*~ Стилизация кнопки заказа звонка*/
+div.phone_button{
+    width: 150px;
+    background-color: #006117;
+    padding: 10px 10px;
+    color:#006117;
+}
+
+/*~ Стилизация ссылки кнопки*/
+a.p_button{
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+/*~ Стилизация кнопки при наведении*/
+div.phone_button:hover{
+    width: 150px;
+    background-color: #000000;
+    transition: .5s linear;
+}
+
+/* Стилизация главного баннера  */
+.main_banner{
+    display: flex;
+    background-color: #ffffff;
+    margin: 235px 0 0 0;
+    width: 90%;
+    height: 510px;
+}
+
+.first_block{
+    display: flex;
+}
+
+/* Стилизация изображения в главном баннере  */
+.img_panel{
+    margin: 0 0 0 140px;
+    width: 80%;
+    height: 80%;
+    border-radius: 0;
+    border-style: solid;
+    border-color: #006117;
+}
+
+/* Стилизация блока с текстом  */
+.block_title{
+    margin:0 0 0 40px;
+}
+
+/* Стилизация заголовка блока */
+.main_title{
+    font-weight: 500;
+    font-size: 25px;
+    color:#454545;
+    margin:50px 0 20px 0;
+}
+
+/* Стилизация текста блока  */
+.title_text{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+    width: 90%;
+}
+
+/* Стилизация текста цены  */
+.title_price{
+    font-weight: 500;
+    color:#006117;
+    font-size: 25px;
+    margin: 0 0 20px 0;
+}
+
+/* Стилизация блока с кнопками  */
+.buttons{
+    display: flex;
+}
+
+/* Отступ у кнопки  */
+.marg{
+    margin: 0 20px 0 0;
+}
+
+/* Стили формы для размещения блоков  */
+.form_app{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили текста формы  */
+.form1{
+    font-size: 20px;
+    text-align: center;
+    border: solid #006117;
+    padding: 30px 40px;
+    margin: 60px 0 0 0;
+}
+
+/* Стилизация поля для ввода  */
+.inputbox{
+    margin: 20px auto;
+    border-radius: 0;
+    font-size: 16px;
+    width: 100%;
+    border-color: #006117;
+    padding: 5px 5px;
+}
+
+/* Стилизация поля для ввода фокусе  */
+.inputbox:focus{
+    margin: 20px auto;
+    border-radius: 0;
+    font-size: 16px;
+    width: 100%;
+    border-color: #006117;
+}
+
+/* Стилизация поля для ввода имени */
+.name {
+    margin: 20px 0 0 0!important;
+}
+
+/* Стилизация кнопки отправки  */
+input.button_otp{
+    width: 150px;
+    background-color: #006117;
+    padding: 10px 10px;
+    display: block;
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Стилизация кнопки отправки  */
+input.button_otp:hover{
+    width: 150px;
+    background-color: #000000;
+    padding: 10px 10px;
+    display: block;
+    margin: 0 0 0 10px;
+    text-decoration: none;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: .5s linear;
+    cursor: pointer;
+}
+
+
+      
